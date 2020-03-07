@@ -56,4 +56,12 @@ func main() {
 	default:
 		fmt.Println("Z")
 	}
+
+	//u=5的时候 跳过
+	for u := 1; u < 10; u++ {
+		if u == 5 {
+			continue
+		}
+		fmt.Println(u)
+	}
 }
