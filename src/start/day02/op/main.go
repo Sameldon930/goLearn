@@ -52,4 +52,7 @@ func main() {
 		}
 		fmt.Println()
 	}
+
+	one++
+	fmt.Println(one)
 }
