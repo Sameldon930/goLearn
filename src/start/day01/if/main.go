@@ -25,12 +25,11 @@ func main() {
 
 	//临时变量运用到if中 在其他作用域 该变量就无法使用 如下
 	if str := 123; str > 100 {
+		fmt.Println(str) //这里可以输出
 		fmt.Println("大于100")
 	} else {
 		fmt.Println("小于或等于100")
 	}
-
-	//此时打印上面的str变量 会出现未定义的报错
-	// fmt.Println(str)  //undefined: str
+	// fmt.Println(str) //这里不能输出 显示未定义
 
 }

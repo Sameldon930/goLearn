@@ -25,20 +25,16 @@ func main() {
 	str := "hello张泽山"
 	// i是key v是value str是要循环的数据  %c是输出字符  一个中文 3个key
 	for i, v := range str {
-		// fmt.Printf("%d  %c\n", i, v)
+		fmt.Printf("%d  %c\n", i, v)
 	}
 
 	//九九乘法表
 
-	//定义行的初始值
 	for n := 1; n <= 9; n++ {
-		//行有几列 第一行有一列 第二行有二列 以此类推
-		for N := 1; N <= n; N++ {
-			fmt.Printf("%d*%d=%d ", n, N, n*N)
+		for m := 1; m <= n; m++ {
+			fmt.Printf("%d*%d = %d  ", n, m, n*m)
 		}
-		//手动生成回车
 		fmt.Println()
-
 	}
 
 }

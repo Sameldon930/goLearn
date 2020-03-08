@@ -14,4 +14,7 @@ func main() {
 	a1[0] = 100
 	fmt.Println(a1, a2, a3) //[100 2 3] [100 2 3] [1 2 3]   因为a3已经在之前复制了a1 所以不变
 
+	//去掉2
+	a1 = append(a1[:1], a1[2:]...)
+	fmt.Println(a1, len(a1), cap(a1))
 }
